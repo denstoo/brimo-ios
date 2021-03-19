@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Memasukkan PIN yang salah
+1. Pada halaman Home
+2. User klik button icon Dompet Digital
+3. Klik button Top Up Baru
+4. Tap field Pilih Dompet Digital
+5. User memilih Dompet Digital LinkAja
+6. User input field Nomor Tujuan 085691335269
+7. User tap button Lanjutkan
+8. Input field Norminal 50000
+9. Tap button Top Up
+10. Tap button Top Up
+11. User tap button YA
+12. User input field PIN 123456
+PIN asal 123456
+Nomor Tujuan 085691335269
+Norminal 50000
+Memunculkan pesan PIN salah</description>
+   <name>TC_BRImo_app_Dana_ios_PIN_601</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c5672c49-952c-495c-9d5a-b23bf35b1114</testCaseGuid>
+</TestCaseEntity>

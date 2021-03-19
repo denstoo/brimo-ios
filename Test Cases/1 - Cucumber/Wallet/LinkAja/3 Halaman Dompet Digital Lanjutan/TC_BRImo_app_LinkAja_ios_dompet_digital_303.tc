@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>User dapat mengganti sumber dana
+1. Pada halaman Home
+2. User klik button icon Dompet Digital
+3. Klik button Top Up Baru
+4. Tap field Pilih Dompet Digital
+5. User memilih Dompet Digital LinkAja
+6. User input field Nomor Tujuan 085691335269
+7. User tap button Lanjutkan
+8. Tap field sumber rekening
+9. User memilih Sumber Rekenig
+Nomor Tujuan LinkAja 085691335269
+Muncul daftar semua rekening yang dimiliki user</description>
+   <name>TC_BRImo_app_LinkAja_ios_dompet_digital_303</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>478c99c9-70bb-4a8e-b07b-02de11670b5c</testCaseGuid>
+</TestCaseEntity>

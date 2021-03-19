@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Memilih Lupa PIN
+1. Pada halaman Home
+2. User klik button icon Dompet Digital
+3. Klik button Top Up Baru
+4. Tap field Pilih Dompet Digital
+5. User memilih Dompet Digital LinkAja
+6. User input field Nomor Tujuan 085691335269
+7. User tap button Lanjutkan
+8. Input field Norminal 50000
+9. Tap button Top Up
+10. Tap button Top Up
+11. User tap button YA
+12. Tap button Lupa Password
+Nomor Tujuan 085691335269
+Norminal 50000
+Menampilkan laman lupa PIN dan dipersilahkan untuk melakukan verifikasi akun dengan memasukkan password BRImo</description>
+   <name>TC_BRImo_app_Dana_ios_PIN_602</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>962e9316-9d5a-4145-bc45-725bf915adac</testCaseGuid>
+</TestCaseEntity>

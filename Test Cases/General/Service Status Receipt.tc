@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Service Status Receipt</name>
+   <tag></tag>
+   <comment>refnum_receipt
+refnum = &quot; + refnum_receipt + &quot;, username = &quot; + username_receipt + &quot;, trx_object = &quot; + object_receipt + &quot; &amp; &quot; + &quot;trx_status = &quot; + status_receipt</comment>
+   <testCaseGuid>677f6bda-7385-45dd-8cb7-b640297dd080</testCaseGuid>
+</TestCaseEntity>

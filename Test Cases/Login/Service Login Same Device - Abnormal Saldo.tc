@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Service Login Same Device - Abnormal Saldo</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>8a59e13a-d9dd-4054-b167-8c9f67c55d6c</testCaseGuid>
+</TestCaseEntity>

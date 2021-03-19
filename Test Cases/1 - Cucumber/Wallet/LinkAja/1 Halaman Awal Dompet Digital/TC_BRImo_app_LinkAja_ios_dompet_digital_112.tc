@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>User dapat mencari daftar Dompet digital lebih dari 1 kata atau 1 kalimat
+1. Pada halaman Home
+2. User klik button icon Dompet Digital
+3. Masukan keyword pencarian di Field Cari Daftar
+Mencari &quot;Acep Budi Cecep&quot;
+Menampilkan semua daftar Dompet Digital yang memiliki kandungan nama &quot;acep budi cecep&quot;</description>
+   <name>TC_BRImo_app_LinkAja_ios_dompet_digital_112</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c630c029-f5d9-4f35-b46a-c89d720b256b</testCaseGuid>
+</TestCaseEntity>

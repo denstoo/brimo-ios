@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>User dapat hapus daftar dompet digital
+1. Pada halaman Home
+2. User klik button icon Dompet Digital
+3. Klik buton icon titik 3
+4. Klik button Hapus
+Data daftar yang tadi di pilih terhapus dan muncul alert &quot;Berhasil hapus daftar tersimpan&quot;</description>
+   <name>TC_BRImo_app_LinkAja_ios_dompet_digital_106</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b583c1c4-a435-4c71-8a17-9a4fc1dccb74</testCaseGuid>
+</TestCaseEntity>

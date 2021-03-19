@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Menginputkan nomor telepon yang tidak valid
+1. Pada halaman Home
+2. User klik button icon Dompet Digital
+3. Klik button Top Up Baru
+4. Tap field Pilih Dompet Digital
+5. User memilih Dompet Digital LinkAja
+6. User input field Nomor Tujuan 1234567890123
+7. User tap button Lanjutkan
+Nomor Asal 1234567890123
+Muncul pesan &quot;Format nomor handphone yang Anda masukan tidak tepat.&quot;</description>
+   <name>TC_BRImo_app_LinkAja_ios_dompet_digital_209</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>9f66ff77-f83e-4108-9212-6f7f37409de0</testCaseGuid>
+</TestCaseEntity>

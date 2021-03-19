@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Menginputkan nomor telepon lebih dari 13 digit
+1. Pada halaman Home
+2. User klik button icon Dompet Digital
+3. Klik button Top Up Baru
+4. Tap field Pilih Dompet Digital
+5. User memilih Dompet Digital LinkAja
+6. User input field Nomor Tujuan 0814567890123
+No. Hp. 08145678901234
+Field Nomor Tujuan tidak bisa lebih dari 14 angka</description>
+   <name>TC_BRImo_app_LinkAja_ios_dompet_digital_208</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>eb92968a-e116-497a-96d2-00457f9ef5f6</testCaseGuid>
+</TestCaseEntity>

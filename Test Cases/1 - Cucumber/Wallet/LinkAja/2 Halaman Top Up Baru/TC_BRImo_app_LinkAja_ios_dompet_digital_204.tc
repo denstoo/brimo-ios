@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>User hanya input Dompet Digital
+1. Pada halaman Home
+2. User klik button icon Dompet Digital
+3. Klik button Top Up Baru
+4. Tap field Pilih Dompet Digital
+5. User memilih Dompet Digital LinkAja
+6. User tap button Lanjutkan
+Button Lanjutkan tidak dapat di tap</description>
+   <name>TC_BRImo_app_LinkAja_ios_dompet_digital_204</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>fae68204-1b89-4ade-b420-481629ffe644</testCaseGuid>
+</TestCaseEntity>

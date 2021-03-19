@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Service Pulsa Confirm - Abnormal Saldo</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f3a3b306-a50b-4e47-95a2-91992a495aac</testCaseGuid>
+</TestCaseEntity>

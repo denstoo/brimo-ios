@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>User dapat memasukan nomor handphone secara manual
+1. Pada halaman Home
+2. User klik button icon Dompet Digital
+3. Klik button Top Up Baru
+4. User input field Nomor Tujuan 085691335269
+Nomor Tujuan LinkAja 085691335269
+Muncul keyboard yang menampilkan angka saja dan field Nomor Tujuan dapat di isi</description>
+   <name>TC_BRImo_app_LinkAja_ios_dompet_digital_202</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>7365463f-7ee9-42f5-9d68-011ababc8645</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Automation done:
+TC_BRImo_app_LinkAja_android_dompet_digital_105
+TC_BRImo_app_LinkAja_android_dompet_digital_106
+TC_BRImo_app_LinkAja_android_dompet_digital_107
+TC_BRImo_app_LinkAja_android_dompet_digital_108
+TC_BRImo_app_LinkAja_android_dompet_digital_109</description>
+   <name>105-109</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>39be4d75-08ac-47f2-a98b-691ae273c5b7</testCaseGuid>
+</TestCaseEntity>

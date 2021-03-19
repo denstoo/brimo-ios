@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Service Wallet Nominal - Abnormal Saldo</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b0107182-ad12-4e59-ac53-95c86301aa71</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Validate TextView Transaksi Terakhir</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>90e2d7be-243f-48a0-bb63-23b450d7eafe</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Validate TextView Bayar Cicilan Finance</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>bc86bf22-1ac6-488a-86db-ecf40394444e</testCaseGuid>
+</TestCaseEntity>

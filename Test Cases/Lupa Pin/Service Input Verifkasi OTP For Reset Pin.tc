@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Service Input Verifkasi OTP For Reset Pin</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b043748c-bbc6-487f-a757-b0aa26c8e3bf</testCaseGuid>
+</TestCaseEntity>

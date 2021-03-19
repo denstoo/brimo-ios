@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>User dapat daftar dompet digital di jadikan favorit
+1. Pada halaman Home
+2. User klik button icon Dompet Digital
+3. Klik buton icon titik 3
+4. Klik Favorite
+Muncul alert &quot;Berhasil menambahkan Favorit&quot;, Icon Bintang berwarna kuning tanda daftar dompet nya sudah menjadi favorit</description>
+   <name>TC_BRImo_app_LinkAja_ios_dompet_digital_108</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b9198753-523d-43a2-a165-02edd81b6d4b</testCaseGuid>
+</TestCaseEntity>

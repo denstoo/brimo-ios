@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Start Application - On Boarding</name>
+   <tag></tag>
+   <comment>GlobalVariable.deviceHeight</comment>
+   <testCaseGuid>5923ee00-1db0-4106-8b5e-dac75899b614</testCaseGuid>
+</TestCaseEntity>

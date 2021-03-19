@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Memilih salah satu kontak dari daftar kontak pengguna
+1. Pada halaman Home
+2. User klik button icon Dompet Digital
+3. Klik button Top Up Baru
+4. Tap field Pilih Dompet Digital
+6. User tap button icon Kontak
+7. User memilih Nomor yang ada di Aplikasi Kontak
+Field Nomor Tujuan terisi sesuai dengan yang di pilih user di Aplikasi Kontak</description>
+   <name>TC_BRImo_app_LinkAja_ios_dompet_digital_212</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>5d9cf9c5-cccb-485b-8663-d3d0dfbff521</testCaseGuid>
+</TestCaseEntity>

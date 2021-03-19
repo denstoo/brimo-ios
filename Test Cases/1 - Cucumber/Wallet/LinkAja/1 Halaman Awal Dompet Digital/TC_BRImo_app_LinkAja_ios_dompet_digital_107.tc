@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>User dapat Edit daftar dompet digital
+1. Pada halaman Home
+2. User klik button icon Dompet Digital
+3. Klik buton icon titik 3
+4. Klik button Edit
+Nama untuk disimpan terupdate</description>
+   <name>TC_BRImo_app_LinkAja_ios_dompet_digital_107</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ae1f6449-f366-4bbc-b84b-def137c2e69f</testCaseGuid>
+</TestCaseEntity>

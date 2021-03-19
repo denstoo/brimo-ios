@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Menekan icon back
+&quot;1. Pada halaman Home
+2. User klik button icon Dompet Digital
+3. Klik button Top Up Baru
+4. Tap field Pilih Dompet Digital
+5. User memilih Dompet Digital LinkAja
+6. User input field Nomor Tujuan 085691335269
+7. User tap button Lanjutkan
+8. Input field Norminal 50000
+9. Tap button Top Up
+10. Tap button Top Up
+11. User tap button YA
+12. User input field PIN 191919
+13. User tap button icon back&quot;
+&quot;PIN benar 191919
+Nomor Tujuan 085691335269
+Norminal 50000&quot;	
+Mengembalikan user ke laman dashboard</description>
+   <name>TC_BRImo_app_Dana_ios_Status_703</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>57e3dbf3-ea75-424c-aede-32bf5a72358f</testCaseGuid>
+</TestCaseEntity>

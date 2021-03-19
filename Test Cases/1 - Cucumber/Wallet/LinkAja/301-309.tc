@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Automation done:
+TC_BRImo_app_LinkAja_iOS_dompet_digital_301
+TC_BRImo_app_LinkAja_iOS_dompet_digital_302
+TC_BRImo_app_LinkAja_iOS_dompet_digital_303
+TC_BRImo_app_LinkAja_iOS_dompet_digital_304
+TC_BRImo_app_LinkAja_iOS_dompet_digital_305
+TC_BRImo_app_LinkAja_iOS_dompet_digital_306
+TC_BRImo_app_LinkAja_iOS_dompet_digital_307
+TC_BRImo_app_LinkAja_iOS_dompet_digital_308
+TC_BRImo_app_LinkAja_iOS_dompet_digital_309
+TC_BRImo_app_LinkAja_iOS_dompet_digital_328</description>
+   <name>301-309</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>9d1d643d-78ae-491b-b47e-155423234e73</testCaseGuid>
+</TestCaseEntity>

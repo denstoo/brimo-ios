@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>User dapat hapus favorit daftar dompet digital
+1. Pada halaman Home
+2. User klik button icon Dompet Digital
+3. Klik button icon bintang
+Muncul alert &quot;Berhasil dihapus dari Favorit&quot;, daftar dompet digital tersebut tidak lagi menjadi favorit</description>
+   <name>TC_BRImo_app_LinkAja_ios_dompet_digital_109</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c27b5ff0-b166-478f-8c64-abb358c58fd8</testCaseGuid>
+</TestCaseEntity>

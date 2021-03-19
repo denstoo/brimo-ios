@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Menginputkan nomor telepon kurang dari 10 digit
+1. Pada halaman Home
+2. User klik button icon Dompet Digital
+3. Klik button Top Up Baru
+4. Tap field Pilih Dompet Digital
+5. User memilih Dompet Digital LinkAja
+6. User input field Nomor Tujuan 081456789
+7. User tap button Lanjutkan
+No. Hp. 081456789
+Button Lanjutkan tidak dapat di tap</description>
+   <name>TC_BRImo_app_LinkAja_ios_dompet_digital_207</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f8791bb4-74f7-496c-9ef9-8521d4f4fe56</testCaseGuid>
+</TestCaseEntity>

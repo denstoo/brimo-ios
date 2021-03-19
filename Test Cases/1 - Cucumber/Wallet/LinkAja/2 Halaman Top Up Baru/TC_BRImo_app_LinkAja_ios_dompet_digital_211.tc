@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Tap button icon Kontak
+1. Pada halaman Home
+2. User klik button icon Dompet Digital
+3. Klik button Top Up Baru
+4. Tap field Pilih Dompet Digital
+6. User tap button icon Kontak
+Sistem dapat membuka Aplikasi Kontak</description>
+   <name>TC_BRImo_app_LinkAja_ios_dompet_digital_211</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>1f17f155-6524-4ffd-9047-f42e7d2a6234</testCaseGuid>
+</TestCaseEntity>

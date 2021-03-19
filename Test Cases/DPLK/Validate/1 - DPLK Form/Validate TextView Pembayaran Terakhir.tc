@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Validate TextView Pembayaran Terakhir</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b14175f4-a5ff-4701-b33d-0525bb1a3266</testCaseGuid>
+</TestCaseEntity>

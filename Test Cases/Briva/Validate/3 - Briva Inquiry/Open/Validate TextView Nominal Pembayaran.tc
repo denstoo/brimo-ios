@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Validate TextView Nominal Pembayaran</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f275d012-a5f4-4501-9274-920e2c9034cf</testCaseGuid>
+</TestCaseEntity>

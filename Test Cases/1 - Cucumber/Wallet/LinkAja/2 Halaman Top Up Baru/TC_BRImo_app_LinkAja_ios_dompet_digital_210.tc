@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Menginputkan nomor telepon yang tidak memiliki akun LinkAja
+1. Pada halaman Home
+2. User klik button icon Dompet Digital
+3. Klik button Top Up Baru
+4. Tap field Pilih Dompet Digital
+5. User memilih Dompet Digital LinkAja
+6. User input field Nomor Tujuan 082223456512
+7. User tap button Lanjutkan
+Nomor Handphone 082223456512
+User tidak dapat masuk ke halaman selanjutnya</description>
+   <name>TC_BRImo_app_LinkAja_ios_dompet_digital_210</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b3b25eb8-1de7-4343-9740-ec9aed407890</testCaseGuid>
+</TestCaseEntity>

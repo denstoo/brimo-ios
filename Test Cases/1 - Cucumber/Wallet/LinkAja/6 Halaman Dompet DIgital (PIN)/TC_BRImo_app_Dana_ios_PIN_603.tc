@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Memasukkan PIN yang salah 3 kali berturut-turut
+1. Pada halaman Home
+2. User klik button icon Dompet Digital
+3. Klik button Top Up Baru
+4. Tap field Pilih Dompet Digital
+5. User memilih Dompet Digital LinkAja
+6. User input field Nomor Tujuan 085691335269
+7. User tap button Lanjutkan
+8. Input field Norminal 50000
+9. Tap button Top Up
+10. Tap button Top Up
+11. User tap button YA
+12. User input field PIN 123456
+13. User input field PIN 123456
+14. User input field PIN 123456
+PIN asal 123456
+Nomor Tujuan 085691335269
+Norminal 50000
+Menampilkan pesan akun terblokir</description>
+   <name>TC_BRImo_app_Dana_ios_PIN_603</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c9845654-43eb-4cc2-b865-49287b6ea6c3</testCaseGuid>
+</TestCaseEntity>

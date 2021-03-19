@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Validate TextView ID Pelanggan atau Nomor Meter</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>97fa015d-1313-4627-b223-5c4b42a46574</testCaseGuid>
+</TestCaseEntity>

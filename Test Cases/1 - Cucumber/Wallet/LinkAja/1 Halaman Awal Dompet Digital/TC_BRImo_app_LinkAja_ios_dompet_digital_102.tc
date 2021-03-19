@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>User ada data nomor pembelian Top Up Terakhir
+1. Pada halaman Home
+2. User klik button icon Dompet Digital
+Pada Daftar Domet Digital menampilkan pesan Belum Ada Daftar</description>
+   <name>TC_BRImo_app_LinkAja_ios_dompet_digital_102</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c9dd1968-a391-41ba-bec2-66c82456d562</testCaseGuid>
+</TestCaseEntity>

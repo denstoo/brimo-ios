@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>User hanya input Nomor Tujuan
+1. Pada halaman Home
+2. User klik button icon Dompet Digital
+3. Klik button Top Up Baru
+4. User input field Nomor Tujuan 085691335269
+5. User tap button Lanjutkan
+Nomor Tujuan LinkAja 085691335269
+Button Lanjutkan tidak dapat di tap</description>
+   <name>TC_BRImo_app_LinkAja_ios_dompet_digital_205</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>be44b04b-1b1f-436a-8bbc-943f706ef241</testCaseGuid>
+</TestCaseEntity>

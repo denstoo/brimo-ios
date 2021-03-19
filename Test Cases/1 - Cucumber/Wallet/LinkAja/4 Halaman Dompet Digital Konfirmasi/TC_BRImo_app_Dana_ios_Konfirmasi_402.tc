@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Menekan icon back
+1. Pada halaman Home
+2. User klik button icon Dompet Digital
+3. Klik button Top Up Baru
+4. Tap field Pilih Dompet Digital
+5. User memilih Dompet Digital LinkAja
+6. User input field Nomor Tujuan 085691335269
+7. User tap button Lanjutkan
+8. Input field Norminal 50000
+9. Tap button Top Up
+10. Tap button icon back
+No HP: 085691335269
+Norminal: 50000
+Menampilkan pop up pembatalan transaksi</description>
+   <name>TC_BRImo_app_Dana_ios_Konfirmasi_402</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>0f7b1cc7-aff5-40f2-82c5-fa1e97b52b6a</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>User ada data Daftar Dompet Digital
+1. Pada halaman Home
+2. User klik button icon Dompet Digital
+Muncul data Daftar Dompet Digital</description>
+   <name>TC_BRImo_app_LinkAja_ios_dompet_digital_104</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>7ba17817-9ba8-4083-98ec-b111b980660f</testCaseGuid>
+</TestCaseEntity>

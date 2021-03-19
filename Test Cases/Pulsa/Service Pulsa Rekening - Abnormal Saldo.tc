@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Service Pulsa Rekening - Abnormal Saldo</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>89fa7eb6-a039-4c18-92a4-45c63b43a106</testCaseGuid>
+</TestCaseEntity>
