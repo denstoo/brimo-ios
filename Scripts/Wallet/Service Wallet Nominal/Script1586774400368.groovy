@@ -18,79 +18,80 @@ import com.detroitlabs.katalonmobileutil.touch.Swipe as Swipe
 import com.detroitlabs.katalonmobileutil.touch.Swipe.SwipeDirection as SwipeDirection
 
 //TC_BRImo_app_LinkAja_iOS_dompet_digital_314	User hanya dapat input angka di Field Norminal
-//Mobile.verifyElementExist(findTestObject('Wallet Nominal Form/XCUIElementTypeTextField - Nominal'), 0)
-//Mobile.tap(findTestObject('Wallet Nominal Form/XCUIElementTypeTextField - Nominal'), 0)
-//Mobile.delay(3)
-//Mobile.tap(findTestObject('Wallet Nominal Form/XCUIElementTypeStaticText - Nomor Tujuan'), 0)
+
+Mobile.verifyElementExist(findTestObject('Wallet Nominal Form/XCUIElementTypeTextField - Nominal'), 0)
+Mobile.tap(findTestObject('Wallet Nominal Form/XCUIElementTypeTextField - Nominal'), 0)
+Mobile.delay(3)
+Mobile.tap(findTestObject('Wallet Nominal Form/XCUIElementTypeStaticText - Nomor Tujuan'), 0)
 //TC_BRImo_app_LinkAja_iOS_dompet_digital_321	Pembayaran Top Up LinkAja dengan Rekening Sumber Giro dengan Saldo Tidak Cukup
 //TC_BRImo_app_LinkAja_iOS_dompet_digital_322	Pembayaran Top Up LinkAja dengan Rekening Sumber Tabungan dengan Status Closed/Dormant/Freeze
 //TC_BRImo_app_LinkAja_iOS_dompet_digital_323	Pembayaran Top Up LinkAja dengan Rekening Sumber Giro dengan Status Closed/Dormant/Freeze
 //TC_BRImo_app_LinkAja_iOS_dompet_digital_324	Pembayaran Top Up LinkAja dengan Rekening Sumber Tabungan dengan Status Closed/Dormant/Freeze
-////TC_BRImo_app_LinkAja_iOS_dompet_digital_319	Pembayaran Top Up LinkAja dengan Rekening Sumber  Giro dengan Saldo Cukup
-//Mobile.tap(findTestObject('Wallet Nominal Form/XCUIElementTypeImage - Pilih Rekening (1)'), 0)
-//text = "Brigitta-Giro"
-//if (Mobile.verifyElementExist(findTestObject('Transfer Nominal Form/XCUIElementTypeStaticText - Pilihan Rekening', [('text') : "$text"]),
-//	0, FailureHandling.OPTIONAL) == true) {
-//	Mobile.verifyElementExist(findTestObject('Transfer Nominal Form/XCUIElementTypeStaticText - Pilihan Rekening', [('text') : "$text"]),
-//		0)
-//
-//	Mobile.tap(findTestObject('Transfer Nominal Form/XCUIElementTypeStaticText - Pilihan Rekening', [('text') : "$text"]),
-//		0)
-//} else {
-//	Swipe.swipe(SwipeDirection.BOTTOM_TO_TOP)
-//
-//	Mobile.verifyElementExist(findTestObject('Transfer Nominal Form/XCUIElementTypeStaticText - Pilihan Rekening', [('text') : "$text"]),
-//		0)
-//
-//	Mobile.tap(findTestObject('Transfer Nominal Form/XCUIElementTypeStaticText - Pilihan Rekening', [('text') : "$text"]),
-//		0)
-//}
-//
-//Mobile.setText(findTestObject('Wallet Nominal Form/XCUIElementTypeTextField - Nominal'), '1000000000', 0)
-//
-//tipe = 'XCUIElementTypeStaticText'
-//
-//value = 'Saldo Anda tidak mencukupi'
-//
-//Mobile.verifyElementExist(findTestObject('1 - Custom Object/Required Type and Label', [('tipe') : "$tipe", ('value') : "$value"]),
-//	0, FailureHandling.STOP_ON_FAILURE)
-//
-//Mobile.tap(findTestObject('Wallet Nominal Form/XCUIElementTypeStaticText - Nomor Tujuan'), 0)
-//
-////TC_BRImo_app_LinkAja_iOS_dompet_digital_320	Pembayaran Top Up LinkAja dengan Rekening Sumber Tabungan dengan Saldo Tidak Cukup
-//Mobile.tap(findTestObject('Wallet Nominal Form/XCUIElementTypeImage - Pilih Rekening (1)'), 0)
-//text = "GIRO SALDO TIDAK CUKUP"
-//text = "Buanyak"
-//if (Mobile.verifyElementExist(findTestObject('Transfer Nominal Form/XCUIElementTypeStaticText - Pilihan Rekening', [('text') : "$text"]),
-//	0, FailureHandling.OPTIONAL) == true) {
-//	Mobile.verifyElementExist(findTestObject('Transfer Nominal Form/XCUIElementTypeStaticText - Pilihan Rekening', [('text') : "$text"]),
-//		0)
-//
-//	Mobile.tap(findTestObject('Transfer Nominal Form/XCUIElementTypeStaticText - Pilihan Rekening', [('text') : "$text"]),
-//		0)
-//} else {
-//	Swipe.swipe(SwipeDirection.BOTTOM_TO_TOP)
-//
-//	Mobile.verifyElementExist(findTestObject('Transfer Nominal Form/XCUIElementTypeStaticText - Pilihan Rekening', [('text') : "$text"]),
-//		0)
-//
-//	Mobile.tap(findTestObject('Transfer Nominal Form/XCUIElementTypeStaticText - Pilihan Rekening', [('text') : "$text"]),
-//		0)
-//}
-//
-//tipe = 'XCUIElementTypeStaticText'
-//
-//value = 'Saldo Anda tidak mencukupi'
-//
-//Mobile.verifyElementExist(findTestObject('1 - Custom Object/Required Type and Label', [('tipe') : "$tipe", ('value') : "$value"]),
-//	0, FailureHandling.STOP_ON_FAILURE)
-//
-Mobile.delay(5)
+//TC_BRImo_app_LinkAja_iOS_dompet_digital_319	Pembayaran Top Up LinkAja dengan Rekening Sumber  Giro dengan Saldo Cukup
+Mobile.tap(findTestObject('Wallet Nominal Form/XCUIElementTypeImage - Pilih Rekening (1)'), 0)
+text = "Brigitta-Giro"
+if (Mobile.verifyElementExist(findTestObject('Transfer Nominal Form/XCUIElementTypeStaticText - Pilihan Rekening', [('text') : "$text"]),
+	0, FailureHandling.OPTIONAL) == true) {
+	Mobile.verifyElementExist(findTestObject('Transfer Nominal Form/XCUIElementTypeStaticText - Pilihan Rekening', [('text') : "$text"]),
+		0)
+
+	Mobile.tap(findTestObject('Transfer Nominal Form/XCUIElementTypeStaticText - Pilihan Rekening', [('text') : "$text"]),
+		0)
+} else {
+	Swipe.swipe(SwipeDirection.BOTTOM_TO_TOP)
+
+	Mobile.verifyElementExist(findTestObject('Transfer Nominal Form/XCUIElementTypeStaticText - Pilihan Rekening', [('text') : "$text"]),
+		0)
+
+	Mobile.tap(findTestObject('Transfer Nominal Form/XCUIElementTypeStaticText - Pilihan Rekening', [('text') : "$text"]),
+		0)
+}
+
+Mobile.setText(findTestObject('Wallet Nominal Form/XCUIElementTypeTextField - Nominal'), '1000000000', 0)
+
+tipe = 'XCUIElementTypeStaticText'
+
+value = 'Saldo Anda tidak mencukupi'
+
+Mobile.verifyElementExist(findTestObject('1 - Custom Object/Required Type and Label', [('tipe') : "$tipe", ('value') : "$value"]),
+	0, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.tap(findTestObject('Wallet Nominal Form/XCUIElementTypeStaticText - Nomor Tujuan'), 0)
+
+//TC_BRImo_app_LinkAja_iOS_dompet_digital_320	Pembayaran Top Up LinkAja dengan Rekening Sumber Tabungan dengan Saldo Tidak Cukup
+Mobile.tap(findTestObject('Wallet Nominal Form/XCUIElementTypeImage - Pilih Rekening (1)'), 0)
+text = "GIRO SALDO TIDAK CUKUP"
+text = "Buanyak"
+if (Mobile.verifyElementExist(findTestObject('Transfer Nominal Form/XCUIElementTypeStaticText - Pilihan Rekening', [('text') : "$text"]),
+	0, FailureHandling.OPTIONAL) == true) {
+	Mobile.verifyElementExist(findTestObject('Transfer Nominal Form/XCUIElementTypeStaticText - Pilihan Rekening', [('text') : "$text"]),
+		0)
+
+	Mobile.tap(findTestObject('Transfer Nominal Form/XCUIElementTypeStaticText - Pilihan Rekening', [('text') : "$text"]),
+		0)
+} else {
+	Swipe.swipe(SwipeDirection.BOTTOM_TO_TOP)
+
+	Mobile.verifyElementExist(findTestObject('Transfer Nominal Form/XCUIElementTypeStaticText - Pilihan Rekening', [('text') : "$text"]),
+		0)
+
+	Mobile.tap(findTestObject('Transfer Nominal Form/XCUIElementTypeStaticText - Pilihan Rekening', [('text') : "$text"]),
+		0)
+}
+
+tipe = 'XCUIElementTypeStaticText'
+
+value = 'Saldo Anda tidak mencukupi'
+
+Mobile.verifyElementExist(findTestObject('1 - Custom Object/Required Type and Label', [('tipe') : "$tipe", ('value') : "$value"]),
+	0, FailureHandling.STOP_ON_FAILURE)
+
 
 Mobile.tap(findTestObject('Wallet Nominal Form/XCUIElementTypeImage - Pilih Rekening (1)'), 0)
-
+Mobile.delay(5)
+Mobile.verifyElementExist(findTestObject('1 - Custom Object/Required Type', [('tipe') : "XCUIElementTypeCell",]), 0, FailureHandling.STOP_ON_FAILURE)
 text = 'Brigitta-Giro'
-text = '0019 0100 1364 305'
+//text = '0019 0100 1364 305'
 
 if (Mobile.verifyElementVisible(findTestObject('Transfer Nominal Form/XCUIElementTypeStaticText - Pilihan Rekening', [('text') : "$text"]), 
     0, FailureHandling.OPTIONAL) == true) {
@@ -112,14 +113,12 @@ if (Mobile.verifyElementVisible(findTestObject('Transfer Nominal Form/XCUIElemen
     }
 }
 
-Mobile.verifyElementVisible(findTestObject('Transfer Nominal Form/XCUIElementTypeStaticText - Pilihan Rekening', [('text') : "$text"]),
-	0, FailureHandling.STOP_ON_FAILURE)
 Mobile.delay(5)
 
 Mobile.tap(findTestObject('Wallet Nominal Form/XCUIElementTypeImage - Pilih Rekening (1)'), 0)
-
+Mobile.verifyElementExist(findTestObject('1 - Custom Object/Required Type', [('tipe') : "XCUIElementTypeCell",]), 0, FailureHandling.STOP_ON_FAILURE)
 text = 'Buanyak'
-text = '0206 0100 2751 302'
+//text = '0206 0100 2751 302'
 
 if (Mobile.verifyElementVisible(findTestObject('Transfer Nominal Form/XCUIElementTypeStaticText - Pilihan Rekening', [('text') : "$text"]), 
     0, FailureHandling.OPTIONAL) == true) {
@@ -139,61 +138,11 @@ if (Mobile.verifyElementVisible(findTestObject('Transfer Nominal Form/XCUIElemen
 }
 
 Mobile.delay(5)
-Mobile.verifyElementVisible(findTestObject('Transfer Nominal Form/XCUIElementTypeStaticText - Pilihan Rekening', [('text') : "$text"]),
-	0, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.tap(findTestObject('Wallet Nominal Form/XCUIElementTypeImage - Pilih Rekening (1)'), 0)
-
-text = 'Dormant'
-text = '0206 0100 0002 529'
-
-if (Mobile.verifyElementVisible(findTestObject('Transfer Nominal Form/XCUIElementTypeStaticText - Pilihan Rekening', [('text') : "$text"]), 
-    0, FailureHandling.OPTIONAL) == true) {
-    Mobile.verifyElementVisible(findTestObject('Transfer Nominal Form/XCUIElementTypeStaticText - Pilihan Rekening', [('text') : "$text"]), 
-        0)
-
-    Mobile.tap(findTestObject('Transfer Nominal Form/XCUIElementTypeStaticText - Pilihan Rekening', [('text') : "$text"]), 
-        0)
-} else {
-    Swipe.swipe(SwipeDirection.BOTTOM_TO_TOP)
-
-    Mobile.verifyElementVisible(findTestObject('Transfer Nominal Form/XCUIElementTypeStaticText - Pilihan Rekening', [('text') : "$text"]), 
-        0)
-
-    Mobile.tap(findTestObject('Transfer Nominal Form/XCUIElementTypeStaticText - Pilihan Rekening', [('text') : "$text"]), 
-        0)
-}
-
-Mobile.delay(5)
-
-Mobile.tap(findTestObject('Wallet Nominal Form/XCUIElementTypeImage - Pilih Rekening (1)'), 0)
-
-text = 'Rekening sudah ditutup'
-text = '0206 0112 2201 504'
-
-if (Mobile.verifyElementVisible(findTestObject('Transfer Nominal Form/XCUIElementTypeStaticText - Pilihan Rekening', [('text') : "$text"]), 
-    0, FailureHandling.OPTIONAL) == true) {
-    Mobile.verifyElementVisible(findTestObject('Transfer Nominal Form/XCUIElementTypeStaticText - Pilihan Rekening', [('text') : "$text"]), 
-        0)
-
-    Mobile.tap(findTestObject('Transfer Nominal Form/XCUIElementTypeStaticText - Pilihan Rekening', [('text') : "$text"]), 
-        0)
-} else {
-    Swipe.swipe(SwipeDirection.BOTTOM_TO_TOP)
-
-    Mobile.verifyElementVisible(findTestObject('Transfer Nominal Form/XCUIElementTypeStaticText - Pilihan Rekening', [('text') : "$text"]), 
-        0)
-
-    Mobile.tap(findTestObject('Transfer Nominal Form/XCUIElementTypeStaticText - Pilihan Rekening', [('text') : "$text"]), 
-        0)
-}
-
-Mobile.delay(5)
-
-Mobile.tap(findTestObject('Wallet Nominal Form/XCUIElementTypeImage - Pilih Rekening (1)'), 0)
-
+Mobile.verifyElementExist(findTestObject('1 - Custom Object/Required Type', [('tipe') : "XCUIElementTypeCell",]), 0, FailureHandling.STOP_ON_FAILURE)
 text = 'Rekening Anda tidak aktif.'
-text = '0019 0101 5545 503'
+//text = '0206 0100 0002 529'
 
 if (Mobile.verifyElementVisible(findTestObject('Transfer Nominal Form/XCUIElementTypeStaticText - Pilihan Rekening', [('text') : "$text"]), 
     0, FailureHandling.OPTIONAL) == true) {
@@ -213,11 +162,29 @@ if (Mobile.verifyElementVisible(findTestObject('Transfer Nominal Form/XCUIElemen
 }
 
 Mobile.delay(5)
+text = 'Rekening sudah ditutup'
 
-Mobile.tap(findTestObject('Wallet Nominal Form/XCUIElementTypeImage - Pilih Rekening (1)'), 0)
+if (Mobile.verifyElementVisible(findTestObject('Transfer Nominal Form/XCUIElementTypeStaticText - Pilihan Rekening', [('text') : "$text"]), 
+    0, FailureHandling.OPTIONAL) == true) {
+    Mobile.verifyElementVisible(findTestObject('Transfer Nominal Form/XCUIElementTypeStaticText - Pilihan Rekening', [('text') : "$text"]), 
+        0)
+
+    Mobile.tap(findTestObject('Transfer Nominal Form/XCUIElementTypeStaticText - Pilihan Rekening', [('text') : "$text"]), 
+        0)
+} else {
+    Swipe.swipe(SwipeDirection.BOTTOM_TO_TOP)
+
+    Mobile.verifyElementVisible(findTestObject('Transfer Nominal Form/XCUIElementTypeStaticText - Pilihan Rekening', [('text') : "$text"]), 
+        0)
+
+    Mobile.tap(findTestObject('Transfer Nominal Form/XCUIElementTypeStaticText - Pilihan Rekening', [('text') : "$text"]), 
+        0)
+}
+
+Mobile.delay(5)
 
 text = 'GIRO SALDO TIDAK CUKUP'
-text = '0019 0100 1364 305'
+//text = '0019 0100 1364 305'
 
 if (Mobile.verifyElementVisible(findTestObject('Transfer Nominal Form/XCUIElementTypeStaticText - Pilihan Rekening', [('text') : "$text"]), 
     0, FailureHandling.OPTIONAL) == true) {
@@ -227,7 +194,7 @@ if (Mobile.verifyElementVisible(findTestObject('Transfer Nominal Form/XCUIElemen
     Mobile.tap(findTestObject('Transfer Nominal Form/XCUIElementTypeStaticText - Pilihan Rekening', [('text') : "$text"]), 
         0)
 } else {
-    Swipe.swipe(SwipeDirection.BOTTOM_TO_TOP)
+    Swipe.swipe(SwipeDirection.TOP_TO_BOTTOM)
 
     Mobile.verifyElementVisible(findTestObject('Transfer Nominal Form/XCUIElementTypeStaticText - Pilihan Rekening', [('text') : "$text"]), 
         0)

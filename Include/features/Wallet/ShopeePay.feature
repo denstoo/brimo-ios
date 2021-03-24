@@ -1,4 +1,13 @@
 Feature: ShopeePay
+	@TC001
+	Scenario: Go to Wallet From Fast Menu
+		When I want go to wallet from fast menu
+	@TC002-TC108
+		Scenario Outline: Go To Wallet From Dashboard
+		And I want to top up my wallet in account <username>
+		Examples: 
+      | username   |
+      | brimosv004 |
 	@101-104
 		Scenario Outline: Go To Wallet From Dashboard
 		And I want to top up my wallet in account <username>

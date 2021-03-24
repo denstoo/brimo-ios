@@ -23,7 +23,7 @@ Feature: OVO
       | OVO			| null	| 081218022786	|
 	@301-309
 	Scenario Outline: Go To Nominal Form
-		Given Costum
+#		Given Costum
 		When I inputting <amount> for the wallet amount and <decision> with <name> , then choose account <debit>
 		 Examples: 
       |	decision	| name		| debit	   			| amount |

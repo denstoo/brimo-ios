@@ -42,7 +42,7 @@ public class connection {
 		ConnectionState cs = new ConnectionStateBuilder().withWiFiDisabled().build()
 		driver.setConnection(cs)
 	}
-	
+
 	@Keyword
 	def onlineMode() {
 		AppiumDriver<?> driver = MobileDriverFactory.getDriver()

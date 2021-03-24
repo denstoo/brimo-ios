@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Automation done : TC001</description>
+   <name>Go To Wallet From Fast Menu</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c49699e6-d03f-4a2d-81c3-7622818b12c4</testCaseGuid>
+</TestCaseEntity>
