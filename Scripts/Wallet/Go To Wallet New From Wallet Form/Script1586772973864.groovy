@@ -15,19 +15,12 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-//TC_BRImo_app_LinkAja_ios_dompet_digital_116 User dapat melakukan Top Up baru
 Mobile.tap(findTestObject('Wallet Form/XCUIElementTypeButton - Top Up Baru'), 0)
 
 Mobile.verifyElementVisible(findTestObject('Wallet New Form/XCUIElementTypeButton - Pilih Dompet Digital'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
 Mobile.verifyElementVisible(findTestObject('Wallet New Form/XCUIElementTypeTextField - Nomor Tujuan'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-//Mobile.delay(3)
-
-Date today = new Date()
-
-String todaysDate = today.format('MM_dd_yy')
-
-String nowTime = today.format('hh_mm_ss')
-
 WebUI.callTestCase(findTestCase('Wallet/Validate/2 - Wallet New Form/Validate Button Lanjutkan (No Input)'), [:], FailureHandling.STOP_ON_FAILURE)
+
+CustomKeywords.'common.screenshot.takeScreenshotAsCheckpoint'()

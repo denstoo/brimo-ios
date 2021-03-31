@@ -15,6 +15,10 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
+GlobalVariable.username = username.toString()
+
+GlobalVariable.password = password.toString()
+
 Mobile.setText(findTestObject('Login Form/XCUIElementTypeTextField - Username'), username.toString(), 0)
 
 Mobile.tap(findTestObject('Login Form/XCUIElementTypeImage - BrimoLoginIlustration'), 0)
@@ -23,15 +27,7 @@ Mobile.setText(findTestObject('Login Form/XCUIElementTypeSecureTextField - Passw
 
 Mobile.tap(findTestObject('Login Form/XCUIElementTypeImage - BrimoLoginIlustration'), 0)
 
-//Mobile.delay(3)
-
-Date today = new Date()
-
-String todaysDate = today.format('MM_dd_yy')
-
-String nowTime = today.format('hh_mm_ss')
-
-Mobile.takeScreenshot(((((GlobalVariable.screenshot + 'screenshot_') + todaysDate) + '-') + nowTime) + '.png', FailureHandling.STOP_ON_FAILURE)
+CustomKeywords.'common.screenshot.takeScreenshotAsCheckpoint'()
 
 Mobile.tap(findTestObject('Login Form/XCUIElementTypeButton - Login'), 0)
 

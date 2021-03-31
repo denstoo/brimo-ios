@@ -16,17 +16,15 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-
-Mobile.startExistingApplication(GlobalVariable.identifierApp, FailureHandling.STOP_ON_FAILURE)
-
-Mobile.toggleAirplaneMode('yes')
-
-Mobile.toggleAirplaneMode('no')
-
-Mobile.verifyElementExist(findTestObject('Feature Dashboard Home/XCUIElementTypeStaticText - Dompet Digital'), 0)
+import com.detroitlabs.katalonmobileutil.touch.Swipe
+import com.detroitlabs.katalonmobileutil.touch.Swipe.SwipeDirection
 
 Mobile.tap(findTestObject('Feature Dashboard Home/XCUIElementTypeStaticText - Dompet Digital'), 0)
 
 Mobile.verifyElementExist(findTestObject('Wallet Form/XCUIElementTypeButton - Top Up Baru'), 0)
 
+CustomKeywords.'common.screenshot.takeScreenshotAsCheckpoint'()
+
 Mobile.tap(findTestObject('Wallet Form/Button Back'), 0)
+
+Mobile.verifyElementExist(findTestObject('Fast Menu/XCUIElementTypeButton - Login'), 0)

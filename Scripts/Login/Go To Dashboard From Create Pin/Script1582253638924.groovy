@@ -19,13 +19,7 @@ Mobile.verifyElementExist(findTestObject('Pop Up Tutorial/XCUIElementTypeStaticT
 
 Mobile.delay(3)
 
-Date today = new Date()
-
-String todaysDate = today.format('MM_dd_yy')
-
-String nowTime = today.format('hh_mm_ss')
-
-Mobile.takeScreenshot(((((GlobalVariable.screenshot + 'screenshot_') + todaysDate) + '-') + nowTime) + '.png', FailureHandling.STOP_ON_FAILURE)
+CustomKeywords.'common.screenshot.takeScreenshotAsCheckpoint'()
 
 Mobile.tap(findTestObject('Pop Up Tutorial/XCUIElementTypeButton - X'), 0)
 

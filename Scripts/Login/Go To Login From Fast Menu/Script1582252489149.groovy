@@ -19,13 +19,5 @@ Mobile.tap(findTestObject('Fast Menu/XCUIElementTypeButton - Login'), 0)
 
 Mobile.verifyElementExist(findTestObject('Login Form/XCUIElementTypeStaticText - Login'), 0)
 
-//Mobile.delay(3)
-
-Date today = new Date()
-
-String todaysDate = today.format('MM_dd_yy')
-
-String nowTime = today.format('hh_mm_ss')
-
-Mobile.takeScreenshot(((((GlobalVariable.screenshot + 'screenshot_') + todaysDate) + '-') + nowTime) + '.png', FailureHandling.STOP_ON_FAILURE)
+CustomKeywords.'common.screenshot.takeScreenshotAsCheckpoint'()
 

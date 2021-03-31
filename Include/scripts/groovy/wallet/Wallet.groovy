@@ -42,12 +42,26 @@ import cucumber.api.java.en.Given
 import cucumber.api.java.en.Then
 import cucumber.api.java.en.When
 
-
+import database.methods
 
 class Wallet {
 	@Given ("Costum")
-	def Costum() {
-		Mobile.startExistingApplication('id.co.bri.brimo')
+	def Costum() { WebUI.callTestCase(findTestCase('General/Database Connect'), [:], FailureHandling.STOP_ON_FAILURE)
+		
+		//salah
+		CustomKeywords.'database.methods.executeUpdate'(('UPDATE tbl_history_purchase_ewallet SET value = "" WHERE username = "' + username.toString()) + '"')
+		
+		//bener
+		def db = new methods()
+		db.executeUpdate('UPDATE tbl_history_purchase_ewallet SET value = "2" WHERE username = "' + "brimosv004" + '"')
+		
+		
+		
+		
+		WebUI.callTestCase(findTestCase('General/Database Close'), [:], FailureHandling.STOP_ON_FAILURE)
+		
+		
+//		Mobile.startExistingApplication('id.co.bri.brimo')
 		Mobile.delay(30)
 //		Mobile.tap(findTestObject('Fast Menu/XCUIElementTypeButton - Login'), 0)
 //		Mobile.setText(findTestObject('Login Form/XCUIElementTypeTextField - Username'), "brimosv004", 0)
@@ -66,14 +80,24 @@ class Wallet {
 //		Mobile.tap(findTestObject('Wallet New Form/XCUIElementTypeButton - Lanjutkan'), 0)
 	}
 	
-	@When ('I want go to wallet from fast menu')
+	@When ('I want to wallet from fast menu')
 	def I_want_go_to_wallet_from_fast_menu() {
 		Mobile.callTestCase(findTestCase('Wallet/Go To Wallet From Fast Menu'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 	
-	@And('I want to top up my wallet in account (.*)')
-	def I_want_to_top_up_my_wallet_in_account(String username){
-		Mobile.callTestCase(findTestCase('Wallet/Go To Wallet From Dashboard'), [('username') : username], FailureHandling.STOP_ON_FAILURE)
+	@And('Click Dompet Digital')
+	def Click_Dompet_Digital(){
+		Mobile.callTestCase(findTestCase('Wallet/Go To Wallet From Dashboard'), [:], FailureHandling.STOP_ON_FAILURE)
+	}
+	
+	@And('I saw my wallet form')
+	def I_saw_my_wallet_page(){
+		Mobile.callTestCase(findTestCase('Wallet/Validate/1 - Wallet Form/Wallet Form'), [:], FailureHandling.STOP_ON_FAILURE)
+	}
+	
+	@And('I saw my wallet new page')
+	def I_saw_my_wallet_new_page(){
+		Mobile.callTestCase(findTestCase('Wallet/Validate/2 - Wallet New Form/Wallet New Form'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 
 	@When('I saw my top up wallet history')

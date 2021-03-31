@@ -19,3 +19,8 @@ import org.openqa.selenium.Keys as Keys
 
 CucumberKW.runFeatureFileWithTags('Include/features/Wallet/OVO.feature', '@301-309')
 
+//CustomKeywords.'database.methods.executeUpdate'(('UPDATE tbl_history_purchase_ewallet SET value = "" WHERE username = "brimosv004"'))
+
+//WebUI.callTestCase(findTestCase('General/Database Connect'), [:], FailureHandling.STOP_ON_FAILURE)
+//
+//WebUI.callTestCase(findTestCase('General/Database Close'), [:], FailureHandling.STOP_ON_FAILURE)

@@ -15,6 +15,10 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
+GlobalVariable.username = username.toString()
+
+GlobalVariable.password = Password.toString()
+
 WebUI.callTestCase(findTestCase('General/Database Connect'), [:], FailureHandling.STOP_ON_FAILURE)
 
 CustomKeywords.'database.methods.executeUpdate'(('UPDATE tbl_brimo_activation SET status = "1", device_id = "movedevices" WHERE username = "' + 
@@ -30,14 +34,7 @@ Mobile.tap(findTestObject('Login Form/XCUIElementTypeImage - BrimoLoginIlustrati
 
 Mobile.delay(3)
 
-Date today = new Date()
-
-String todaysDate = today.format('MM_dd_yy')
-
-String nowTime = today.format('hh_mm_ss')
-
-Mobile.takeScreenshot(((('/Users/tsi-psd/Katalon Studio/Brimo Native iOS/Screenshot/iOS/screenshot_' + todaysDate) + '-') + 
-    nowTime) + '.png', FailureHandling.STOP_ON_FAILURE)
+CustomKeywords.'common.screenshot.takeScreenshotAsCheckpoint'()
 
 Mobile.tap(findTestObject('Login Form/XCUIElementTypeButton - Login'), 0)
 
@@ -45,13 +42,7 @@ Mobile.verifyElementExist(findTestObject('Move Device/XCUIElementTypeAlert - Pin
 
 Mobile.delay(3)
 
-today = new Date()
-
-todaysDate = today.format('MM_dd_yy').toString()
-
-nowTime = today.format('hh_mm_ss').toString()
-
-Mobile.takeScreenshot(((((GlobalVariable.screenshot + 'screenshot_') + todaysDate) + '-') + nowTime) + '.png', FailureHandling.STOP_ON_FAILURE)
+CustomKeywords.'common.screenshot.takeScreenshotAsCheckpoint'()
 
 Mobile.tap(findTestObject('Move Device/XCUIElementTypeButton - Ya'), 0)
 

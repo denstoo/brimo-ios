@@ -78,18 +78,6 @@ Feature: Wallet
   Scenario:
   Then Transaction success
   #And I close application
-		
-#	@201
-#	Scenario Outline:
-#	When I chose the <wallet> wallet <type>
- #	Examples: 
-  #| wallet    | type     |
-  #| LinkAja   |          |
-  #| Gopay     | Customer |
-  #| Gopay     | Driver   |
-  #| OVO       |          |
-  #| ShopeePay |          |
-  #| DANA      |          |
   
 	@Valid01
   Scenario Outline: User top up wallet with CA
@@ -103,34 +91,34 @@ Feature: Wallet
     When I try adding recipient of wallet in condition with <wallet>, <type> and <walletNumber>
     When I inputting <amount> for the wallet amount and <decision> with <name> , then choose account <debit>
     When I confirm top up wallet with <detail> and <wallet>
-    #When I validate my pin with <pin> before transaction
-    #Then Transaction success
+    When I validate my pin with <pin> before transaction
+    Then Transaction success
 
     Examples: 
       | username   | password   | pin 	 | wallet			| type 			| walletNumber	| amount	| detail			|	decision	| name		| debit	| condition	|
       | brimosv004 | Jakarta123 | 123457 | Gopay			| Customer	| 081212341234	| 10000		| wallet			|	NULL			| NULL		| RATRI	|	NEW				|
-      #| brimosv004 | Jakarta123 | 123457 | Gopay			| Driver		| 081212341234	| 10000		| wallet			| NULL			| NULL		| RATRI	|	NULL			|
-      #| brimosv004 | Jakarta123 | 123457 | Gopay			| Merchant	| 081212341234	| 10000		| wallet			| NULL			| NULL		| RATRI	|	NULL			|
-      #| brimosv004 | Jakarta123 | 123457 | LinkAja		| null			| 085691335269	| 10000		| wallet			| NULL			| NULL		| RATRI	|	NULL			|
-      #| brimosv004 | Jakarta123 | 123457 | OVO				| null			| 080012345123	| 20000		| wallet			| NULL			| NULL		| RATRI	|	NULL			|
-      #| brimosv004 | Jakarta123 | 123457 | ShopeePay	| null			| 081290825284	| 10000		| wallet			| NULL			| NULL		| RATRI	|	NULL			|
-      #| brimosv004 | Jakarta123 | 123457 | DANA			| null			| 082299888040	| 10000		| wallet			| NULL			| NULL		| RATRI	|	NULL			| 
+      | brimosv004 | Jakarta123 | 123457 | Gopay			| Driver		| 081212341234	| 10000		| wallet			| NULL			| NULL		| RATRI	|	NULL			|
+      | brimosv004 | Jakarta123 | 123457 | Gopay			| Merchant	| 081212341234	| 10000		| wallet			| NULL			| NULL		| RATRI	|	NULL			|
+      | brimosv004 | Jakarta123 | 123457 | LinkAja		| null			| 085691335269	| 10000		| wallet			| NULL			| NULL		| RATRI	|	NULL			|
+      | brimosv004 | Jakarta123 | 123457 | OVO				| null			| 080012345123	| 20000		| wallet			| NULL			| NULL		| RATRI	|	NULL			|
+      | brimosv004 | Jakarta123 | 123457 | ShopeePay	| null			| 081290825284	| 10000		| wallet			| NULL			| NULL		| RATRI	|	NULL			|
+      | brimosv004 | Jakarta123 | 123457 | DANA			| null			| 082299888040	| 10000		| wallet			| NULL			| NULL		| RATRI	|	NULL			| 
       
-  #@Invalid  
-  #Scenario Outline: User top up wallet - Abnormal Saldo
-    #Given I start application
-    #When I want login
-    #When Abnormal Saldo - I try login with existing account <username> and <password>
-    #Then I successfully go to dashboard
-    #And I want to top up my wallet with <condition> for <username>
-    #When I saw my top up wallet history
-    #When I want to add recipient of wallet
-    #When I try adding recipient of wallet in condition with <wallet>, <type> and <walletNumber>
-    #Then Abnormal Saldo - I inputting <amount> for the wallet amount with <username>
-#
-    #Examples: 
-      #| username   | password   | pin 	 | wallet			| type 			| walletNumber	| amount	| condition	|
-      #| brimosv004 | Jakarta123 | 123457 | Gopay			| Customer	| 081212341234	| 10000		|	NEW				|
+  @Invalid  
+  Scenario Outline: User top up wallet - Abnormal Saldo
+    Given I start application
+    When I want login
+    When Abnormal Saldo - I try login with existing account <username> and <password>
+    Then I successfully go to dashboard
+    And I want to top up my wallet with <condition> for <username>
+    When I saw my top up wallet history
+    When I want to add recipient of wallet
+    When I try adding recipient of wallet in condition with <wallet>, <type> and <walletNumber>
+    Then Abnormal Saldo - I inputting <amount> for the wallet amount with <username>
+
+    Examples: 
+      | username   | password   | pin 	 | wallet			| type 			| walletNumber	| amount	| condition	|
+      | brimosv004 | Jakarta123 | 123457 | Gopay			| Customer	| 081212341234	| 10000		|	NEW				|
    
    #@Valid 
    #Scenario Outline: User top up wallet with SA

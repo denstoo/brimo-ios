@@ -17,17 +17,9 @@ import internal.GlobalVariable as GlobalVariable
 
 Mobile.startExistingApplication(GlobalVariable.identifierApp, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.verifyElementExist(findTestObject('On Boarding/XCUIElementTypeStaticText - Selamat Datang BRImo'), 0)
+Mobile.verifyElementExist(findTestObject('On Boarding/XCUIElementTypeStaticText - Selamat Datang BRImo'), 0))
 
-Mobile.delay(3)
-
-Date today = new Date()
-
-String todaysDate = today.format('MM_dd_yy')
-
-String nowTime = today.format('hh_mm_ss')
-
-Mobile.takeScreenshot(((((GlobalVariable.screenshot + 'screenshot_') + todaysDate) + '-') + nowTime) + '.png', FailureHandling.STOP_ON_FAILURE)
+CustomKeywords.'common.screenshot.takeScreenshotAsCheckpoint'()
 
 GlobalVariable.deviceHeight = Mobile.getDeviceHeight().toString()
 

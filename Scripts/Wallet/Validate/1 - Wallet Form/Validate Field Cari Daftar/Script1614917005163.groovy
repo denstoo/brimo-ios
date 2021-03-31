@@ -17,84 +17,37 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-//TC_BRImo_app_LinkAja_ios_dompet_digital_110 User dapat mencari daftar Dompet Digital dengan 1 huruf
-Mobile.setText(findTestObject('Wallet Form/Field Cari Daftar Dompet Digital'), 'a', 0)
+Mobile.setText(findTestObject('Wallet Form/Field Cari Daftar Dompet Digital'), 'ShopeePay', 0); Mobile.hideKeyboard()
 
-Date today = new Date()
+CustomKeywords.'common.screenshot.takeScreenshotAsCheckpoint'()
 
-String todaysDate = today.format('MM_dd_yy')
+Mobile.setText(findTestObject('Wallet Form/Field Cari Daftar Dompet Digital'), 'Mencari yang tidak ada', 0); Mobile.hideKeyboard()
 
-String nowTime = today.format('hh_mm_ss')
+CustomKeywords.'common.screenshot.takeScreenshotAsCheckpoint'()
 
-Mobile.takeScreenshot(((((GlobalVariable.screenshot + 'screenshot_') + todaysDate) + '-') + nowTime) + '.png', FailureHandling.STOP_ON_FAILURE)
+Mobile.setText(findTestObject('Wallet Form/Field Cari Daftar Dompet Digital'), 'x', 0); Mobile.hideKeyboard()
 
-WebUI.delay(2)
+CustomKeywords.'common.screenshot.takeScreenshotAsCheckpoint'()
 
-//TC_BRImo_app_LinkAja_ios_dompet_digital_111 User dapat mencari daftar Dompet Digital dengan masukan lebih dari 1 huruf atau 1 kata
-Mobile.setText(findTestObject('Wallet Form/Field Cari Daftar Dompet Digital'), 'acep', 0)
+Mobile.setText(findTestObject('Wallet Form/Field Cari Daftar Dompet Digital'), 'xyz', 0); Mobile.hideKeyboard()
 
-today = new Date()
+CustomKeywords.'common.screenshot.takeScreenshotAsCheckpoint'()
 
-todaysDate = today.format('MM_dd_yy')
+Mobile.setText(findTestObject('Wallet Form/Field Cari Daftar Dompet Digital'), 'xyz 123', 0); Mobile.hideKeyboard()
 
-nowTime = today.format('hh_mm_ss')
+CustomKeywords.'common.screenshot.takeScreenshotAsCheckpoint'()
 
-Mobile.takeScreenshot(((((GlobalVariable.screenshot + 'screenshot_') + todaysDate) + '-') + nowTime) + '.png', FailureHandling.STOP_ON_FAILURE)
+Mobile.setText(findTestObject('Wallet Form/Field Cari Daftar Dompet Digital'), 'XyZ', 0); Mobile.hideKeyboard()
 
-WebUI.delay(2)
+CustomKeywords.'common.screenshot.takeScreenshotAsCheckpoint'()
 
-//TC_BRImo_app_LinkAja_ios_dompet_digital_112 User dapat mencari daftar Dompet digital lebih dari 1 kata atau 1 kalimat
-Mobile.setText(findTestObject('Wallet Form/Field Cari Daftar Dompet Digital'), 'acep budi cecep', 
-    0)
+Mobile.setText(findTestObject('Wallet Form/Field Cari Daftar Dompet Digital'), '123', 0); Mobile.hideKeyboard()
 
-today = new Date()
+CustomKeywords.'common.screenshot.takeScreenshotAsCheckpoint'()
 
-todaysDate = today.format('MM_dd_yy')
+Mobile.setText(findTestObject('Wallet Form/Field Cari Daftar Dompet Digital'), '!@?', 0); Mobile.hideKeyboard()
 
-nowTime = today.format('hh_mm_ss')
+CustomKeywords.'common.screenshot.takeScreenshotAsCheckpoint'()
 
-Mobile.takeScreenshot(((((GlobalVariable.screenshot + 'screenshot_') + todaysDate) + '-') + nowTime) + '.png', FailureHandling.STOP_ON_FAILURE)
 
-WebUI.delay(2)
-
-//TC_BRImo_app_LinkAja_ios_dompet_digital_113 User dapat mencari daftar Dompet Digital tanpa Case Sensitive
-Mobile.setText(findTestObject('Wallet Form/Field Cari Daftar Dompet Digital'), 'aCEp', 0)
-
-today = new Date()
-
-todaysDate = today.format('MM_dd_yy')
-
-nowTime = today.format('hh_mm_ss')
-
-Mobile.takeScreenshot(((((GlobalVariable.screenshot + 'screenshot_') + todaysDate) + '-') + nowTime) + '.png', FailureHandling.STOP_ON_FAILURE)
-
-WebUI.delay(2)
-
-//TC_BRImo_app_LinkAja_ios_dompet_digital_114 User dapat mencari daftar Dompet Digital dengan angka
-Mobile.setText(findTestObject('Wallet Form/Field Cari Daftar Dompet Digital'), '123', 0)
-
-today = new Date()
-
-todaysDate = today.format('MM_dd_yy')
-
-nowTime = today.format('hh_mm_ss')
-
-Mobile.takeScreenshot(((((GlobalVariable.screenshot + 'screenshot_') + todaysDate) + '-') + nowTime) + '.png', FailureHandling.STOP_ON_FAILURE)
-
-WebUI.delay(2)
-
-//TC_BRImo_app_LinkAja_ios_dompet_digital_115 User dapat mencari daftar Dompet Digital dengan simbol
-Mobile.setText(findTestObject('Wallet Form/Field Cari Daftar Dompet Digital'), '!@?', 0)
-
-today = new Date()
-
-todaysDate = today.format('MM_dd_yy')
-
-nowTime = today.format('hh_mm_ss')
-
-Mobile.takeScreenshot(((((GlobalVariable.screenshot + 'screenshot_') + todaysDate) + '-') + nowTime) + '.png', FailureHandling.STOP_ON_FAILURE)
-
-WebUI.delay(2)
-
-Mobile.hideKeyboard()
 

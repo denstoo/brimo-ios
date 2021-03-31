@@ -15,6 +15,10 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
+GlobalVariable.username = username.toString()
+
+GlobalVariable.password = Password.toString()
+
 WebUI.callTestCase(findTestCase('General/Database Connect'), [:], FailureHandling.STOP_ON_FAILURE)
 
 CustomKeywords.'database.methods.executeUpdate'(('UPDATE tbl_user_account SET finansial_status = "1" WHERE username = "' + 
@@ -38,13 +42,7 @@ Mobile.tap(findTestObject('Login Form/XCUIElementTypeImage - BrimoLoginIlustrati
 
 Mobile.delay(3)
 
-Date today = new Date()
-
-String todaysDate = today.format('MM_dd_yy')
-
-String nowTime = today.format('hh_mm_ss')
-
-Mobile.takeScreenshot(((((GlobalVariable.screenshot + 'screenshot_') + todaysDate) + '-') + nowTime) + '.png', FailureHandling.STOP_ON_FAILURE)
+CustomKeywords.'common.screenshot.takeScreenshotAsCheckpoint'()
 
 Mobile.tap(findTestObject('Login Form/XCUIElementTypeButton - Login'), 0)
 

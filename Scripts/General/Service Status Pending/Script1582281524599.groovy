@@ -44,13 +44,7 @@ Mobile.verifyElementExist(findTestObject('Status Pending/XCUIElementTypeStaticTe
 //    ' & ') + 'trx_status = ') + status_pending)
 Mobile.delay(3)
 
-Date today = new Date()
-
-String todaysDate = today.format('MM_dd_yy')
-
-String nowTime = today.format('hh_mm_ss')
-
-Mobile.takeScreenshot(((((GlobalVariable.screenshot + 'screenshot_') + todaysDate) + '-') + nowTime) + '.png', FailureHandling.STOP_ON_FAILURE)
+CustomKeywords.'common.screenshot.takeScreenshotAsCheckpoint'()
 
 Mobile.tap(findTestObject('Status Pending/XCUIElementTypeButton - Cek Status'), 0)
 

@@ -1,19 +1,70 @@
 Feature: ShopeePay
+	@TC764
+	Scenario Outline: User top up wallet from Top Up Baru
+		Given I start application
+		When I want login
+		When I try login with existing account <username> and <password>
+		Then I successfully go to dashboard
+		And Click Dompet Digital
+		When I want to add recipient of wallet
+		When I try adding recipient of wallet in condition with <wallet>, <type> and <walletNumber>
+		When I inputting <amount> for the wallet amount and <decision> with <name> , then choose account <debit>
+		When I confirm top up wallet with <detail> and <wallet>
+		When I validate my pin with <pin> before transaction
+		Then Transaction success
+		And I close application
+    Examples: 
+      | username   | password   | wallet	  | type 	| walletNumber	|	decision	| name		| debit	    | amount | pin		|
+      | brimosv004 | Jakarta123 | ShopeePay	| NULL	| 081290825284	|	Save			| John		| Buanyak		| 30000  | 191919	|
+	@TC760
+	Scenario Outline: User top up wallet from history
+		Given I start application
+		When I want login
+		When I try login with existing account <username> and <password>
+		Then I successfully go to dashboard
+		And Click Dompet Digital
+		When I want to add recipient of wallet
+		When I try adding recipient of wallet in condition with <wallet>, <type> and <walletNumber>
+		When I inputting <amount> for the wallet amount and <decision> with <name> , then choose account <debit>
+		When I confirm top up wallet with <detail> and <wallet>
+		When I validate my pin with <pin> before transaction
+		Then Transaction success
+		And I close application
+    Examples: 
+      | username   | password   | wallet	  | type 	| walletNumber	|	decision	| name		| debit	    | amount | pin		|
+      | brimosv004 | Jakarta123 | ShopeePay	| NULL	| 081290825284	|	Save			| John		| Buanyak		| 30000  | 191919	|
 	@TC001
-	Scenario: Go to Wallet From Fast Menu
-		When I want go to wallet from fast menu
+	Scenario Outline: Go 	to Wallet From Fast Menu
+		Given I start application
+		When I want to wallet from fast menu
+		When I want login
+		When I try login with existing account <username> and <password>
+		Then I successfully go to dashboard
+		And I saw my wallet form
+		And I saw my wallet new
+		And I saw my wallet norminal
+		
+	@TC004
+	Scenario Outline: User top up wallet from history
+		Given I start application
+		When I want login
+		When I try login with existing account <username> and <password>
+		Then I successfully go to dashboard
+		When I turned off the internet connection
+		And Click Dompet Digital
+		And I close pop up Tidak Ada Koneksi Internet
+		And I close application
+		
 	@TC002-TC108
-		Scenario Outline: Go To Wallet From Dashboard
-		And I want to top up my wallet in account <username>
-		Examples: 
-      | username   |
-      | brimosv004 |
+		Scenario: Go To Wallet From Dashboard
+		Given I start application
+		When I want login
+		When I try login with existing account <username> and <password>
+		Then I successfully go to dashboard
+		And I saw my wallet page
 	@101-104
-		Scenario Outline: Go To Wallet From Dashboard
-		And I want to top up my wallet in account <username>
-		Examples: 
-      | username   |
-      | brimosv004 |
+		Scenario: Go To Wallet From Dashboard
+		And Click Dompet Digital
  	@105-109
 		Scenario: Service Wallet Form
 		When I saw my top up wallet history
@@ -27,8 +78,8 @@ Feature: ShopeePay
 	Scenario Outline: Service Wallet New Form
 		When I try adding recipient of wallet in condition with <wallet>, <type> and <walletNumber>
 		 Examples: 
-      | wallet	  | type 			| walletNumber	|
-      | ShopeePay	| Customer	| 081290825284	|
+      | wallet	  | type 	| walletNumber	|
+      | ShopeePay	| NULL	| 081290825284	|
 	@301-309
 	Scenario Outline: Go To Nominal Form
 		#Given Costum

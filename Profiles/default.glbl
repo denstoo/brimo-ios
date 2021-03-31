@@ -21,7 +21,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'10.35.65.18'</initValue>
+      <initValue>'172.18.136.93'</initValue>
       <name>dbUrl</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -31,7 +31,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'3306'</initValue>
+      <initValue>'4018'</initValue>
       <name>dbPort</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -96,7 +96,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'/Users/divapp/Documents/Brimo/Screenshot iOS/'</initValue>
+      <initValue>'/Users/divapp/Documents/Katalon/Brimo Native/brimo-frontend/Screenshot/iOS/'</initValue>
       <name>screenshot</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

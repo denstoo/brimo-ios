@@ -31,13 +31,7 @@ Mobile.verifyElementExist(findTestObject('Link Activation/XCUIElementTypeStaticT
 
 Mobile.delay(3)
 
-Date today = new Date()
-
-String todaysDate = today.format('MM_dd_yy')
-
-String nowTime = today.format('hh_mm_ss')
-
-Mobile.takeScreenshot(((((GlobalVariable.screenshot + 'screenshot_') + todaysDate) + '-') + nowTime) + '.png', FailureHandling.STOP_ON_FAILURE)
+CustomKeywords.'common.screenshot.takeScreenshotAsCheckpoint'()
 
 ResultSet response = CustomKeywords.'database.methods.executeQuery'(('SELECT * FROM tbl_brimo_activation WHERE username = "' + 
     username.toString()) + '"')
@@ -81,13 +75,7 @@ Mobile.verifyElementExist(findTestObject('Link Activation/XCUIElementTypeTextVie
 
 Mobile.delay(3)
 
-today = new Date()
-
-todaysDate = today.format('MM_dd_yy')
-
-nowTime = today.format('hh_mm_ss')
-
-Mobile.takeScreenshot(((((GlobalVariable.screenshot + 'screenshot_') + todaysDate) + '-') + nowTime) + '.png', FailureHandling.STOP_ON_FAILURE)
+CustomKeywords.'common.screenshot.takeScreenshotAsCheckpoint'()
 
 Mobile.tap(findTestObject('Link Activation/XCUIElementTypeButton - Open'), 0)
 

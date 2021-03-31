@@ -19,11 +19,17 @@ import org.openqa.selenium.Keys as Keys
 
 Mobile.startExistingApplication('id.co.bri.brimo', FailureHandling.CONTINUE_ON_FAILURE)
 
+//Mobile.delay(5, FailureHandling.CONTINUE_ON_FAILURE)
+
+//CustomKeywords.'common.AirplaneModeiOSApp.enableAirplaneMode'()
+//Mobile.toggleAirplaneMode('yes', FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.toggleAirplaneMode('on')
+
+
 Mobile.delay(5, FailureHandling.CONTINUE_ON_FAILURE)
-
-CustomKeywords.'common.AirplaneModeiOSApp.enableAirplaneMode'()
-
-Mobile.delay(5, FailureHandling.CONTINUE_ON_FAILURE)
-
-CustomKeywords.'common.AirplaneModeiOSApp.disableAirplaneMode'()
+Mobile.toggleAirplaneMode('')
+Mobile.toggleAirplaneMode('true')
+Mobile.toggleAirplaneMode('yes')
+//CustomKeywords.'common.AirplaneModeiOSApp.disableAirplaneMode'()
+//Mobile.toggleAirplaneMode('no', FailureHandling.CONTINUE_ON_FAILURE)
 

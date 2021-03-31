@@ -6,7 +6,7 @@
    <UUID>cb86f48d-5899-4df7-9a1a-26b6dbdfd38e</UUID>
    <migratedVersion>5.9.0</migratedVersion>
    <pageLoadTimeout>0</pageLoadTimeout>
-   <projectFileLocation>/Users/divapp/Documents/Katalon/Brimo Native/Brimo Native iOS/Brimo Native iOS.prj</projectFileLocation>
+   <projectFileLocation>/Users/divapp/Documents/Katalon/Brimo Native/brimo-frontend/Brimo Native iOS.prj</projectFileLocation>
    <sourceContent>
       <sourceFolderList>
          <sourceFolderConfiguration>

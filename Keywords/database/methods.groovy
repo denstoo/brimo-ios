@@ -41,7 +41,7 @@ public class methods {
 
 	def connectDB(String url, String dbname, String port, String username, String password) {
 		//Load driver class for your specific database type
-		String conn = "jdbc:mysql://" + url + ":" + port + "/" + dbname
+		String conn = "jdbc:mysql://" + url + ":" + port + "/" + dbname + "?serverTimezone=UTC"
 		//Class.forName("org.sqlite.JDBC")
 		//String connectionString = "jdbc:sqlite:" + dataFile
 		if (connection != null && !connection.isClosed()) {
@@ -105,5 +105,9 @@ public class methods {
 		Statement stm = connection.createStatement()
 		boolean result = stm.execute(queryString)
 		return result
+	}
+
+	def asd() {
+		return "asd"
 	}
 }
